@@ -1,0 +1,58 @@
+$margins: (0, 5, 10, 15, 20, 30, 40, 60, 70, 90, 120, 160, 180);
+@each $margin in $margins {
+    .mt--#{$margin} {
+        margin-top: $margin + px;
+    }
+    .mb--#{$margin} {
+        margin-bottom: $margin + px;
+    }
+    .ml--#{$margin} {
+        margin-left: $margin + px;
+    }
+    .mr--#{$margin} {
+        margin-right: $margin + px;
+    }
+    .m--#{$margin} {
+        margin: $margin + px;
+    }
+}
+
+$paddings: (0, 5, 10, 15, 20, 30, 40, 60, 90, 120, 160, 180);
+@each $padding in $paddings {
+    .pt--#{$padding} {
+        padding-top: $padding + px;
+    }
+    .pb--#{$padding} {
+        padding-bottom: $padding + px;
+    }
+    .pl--#{$padding} {
+        padding-left: $padding + px;
+    }
+    .pr--#{$padding} {
+        padding-right: $padding + px;
+    }
+    .p--#{$padding} {
+        padding: $padding + px;
+    }
+}
+
+.section-title {
+    text-align: center !important;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+    &.dark {
+        color: $dark;
+    }
+    &.light {
+        color: $light;
+    }
+}
+
+.dark {
+    color: $dark;
+}
+
+.light {
+    color: $light;
+}
