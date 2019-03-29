@@ -1,0 +1,74 @@
+/*    Responsive CSS    */
+
+@media only screen and (max-width: 40em) {
+	.top-bar .top-bar-section {
+		display: none;
+	}
+
+	.top-bar.expanded .top-bar-section {
+		display: block;
+	}
+
+	.top-bar-section ul {
+		margin-top: 70px;
+		background: $dark;
+	}
+
+	.top-bar-section li:not(.has-form) a:not(.button) {
+		color: $light;
+		margin: 0;
+		display: block;
+		text-align: center;
+		padding: 20px 0;
+		background: #ffffff;
+		border-bottom: 1px solid #fff4d7;
+		-webkit-transition: all .2s linear;
+		-o-transition: all .2s linear;
+		transition: all .2s linear;
+	}
+
+	header .top-bar-section li:not(.has-form):last-child a:not(.button) {
+		border: 0;
+	}
+
+	header .top-bar-section li:not(.has-form) a:not(.button):hover {
+		color: $light;
+		background: $accent;
+		padding: 20px 0;
+	}
+
+
+	.hero .caption h1.mean_cap,
+	.hero .caption h2.sub_cap {
+		font-size: 45px;
+		line-height: 60px;
+	}
+
+	footer .copyrights {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+
+	footer .social,
+	footer .contact {
+		width: 100%;
+		text-align: center;
+		float: none;
+		margin: 0;
+	}
+
+	footer .contact {
+		margin-top: 60px;
+	}
+}
+
+
+@media only screen and (min-width: 64.063em) {
+	#back_top {
+		right: 40px;
+		bottom: 40px;
+		margin-top: -22px;
+	}
+}

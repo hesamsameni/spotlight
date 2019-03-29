@@ -1,0 +1,104 @@
+#particles-js {
+    background-color: $dark;
+    height: 100vh;
+    padding-bottom: 100px;
+
+    @media (max-width: 425px) {
+        height: 1650px;
+    }
+
+    .circle-each {
+        border-radius: 50%;
+        padding: 30px;
+        width: 200px;
+        height: 200px;
+        background-color: $dark;
+        text-align: center;
+        display: block;
+        margin: 20px auto;
+        transition: all 300ms ease-in-out;
+        box-shadow: 0px 2px 16px 1px rgba(255, 255, 255, 0.57);
+
+        @media (max-width: 768px) {
+            width: 180px;
+            height: 180px;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 2px 4px 18px 3px rgba(255, 255, 255, 0.57);
+            background-color: $gold;
+
+            .service-title {
+                color: $dark;
+            }
+
+            .services-icon {
+                color: $dark;
+            }
+        }
+
+        span {
+            font-size: 20px;
+            font-weight: 100;
+            text-align: center;
+            color: $accent;
+
+
+        }
+
+        &.biggest {
+            width: 280px;
+            height: 280px;
+            padding-top: 60px;
+
+            @media (max-width: 768px) {
+                width: 180px;
+                height: 180px;
+                padding-top: 30px;
+            }
+
+            .services-icon {
+                font-size: 45px;
+
+                @media (max-width: 768px) {
+                    font-size: 30px;
+                }
+            }
+
+            .service-title {
+                font-size: 20px;
+
+                @media (max-width: 768px) {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .services-icon {
+            display: block;
+            font-size: 40px;
+            padding-bottom: 20px;
+            transition: all 300ms ease;
+            color: $gold;
+            padding-top: 15px;
+
+            @media (max-width: 768px) {
+                font-size: 30px;
+                padding-top: 0;
+            }
+        }
+
+        .service-title {
+            font-size: 14px;
+            font-weight: 100;
+            text-align: center;
+            text-transform: uppercase;
+            color: $gold;
+
+            @media (max-width: 768px) {
+                font-size: 12px;
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+footer {
+	padding: 100px 0;
+	background: $dark;
+}
+
+footer .copyrights {
+	float: left;
+	margin-bottom: 80px;
+}
+
+footer .copyrights p {
+	color: #c5c5c5;
+	font-size: 12px;
+	letter-spacing: .5px;
+}
+
+footer .contact_details {
+	max-width: 430px;
+	float: right;
+}
+
+footer .social {
+	width: 130px;
+	display: inline-block;
+}
+
+footer .social ul {
+	margin: 0;
+}
+
+footer .social ul li {
+	margin-bottom: 7px;
+}
+
+footer .social ul li a,
+footer .contact {
+	display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+}
+
+footer .contact {
+	width: 215px;
+	margin-left: 80px;
+	vertical-align: top;
+}
+
+footer .contact .details {
+	margin-bottom: 30px;
+}
+
+footer p {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+/*  Back To Top button  */
+
+#back_top {
+	text-decoration: none;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index: 9999;
+	opacity: 0;
+}
+
+.btn_fancy#back_top {
+	padding: 6px 16px;
+}
+
+.btn_fancy#back_top:hover .border_layer {
+	-webkit-transform: translate(1px, -1px);
+	-ms-transform: translate(1px, -1px);
+	-o-transform: translate(1px, -1px);
+	transform: translate(1px, -1px);
+}
+
+.btn_fancy#back_top:hover .solid_layer {
+	-webkit-transform: translate(-1px, 1px);
+	-ms-transform: translate(-1px, 1px);
+	-o-transform: translate(-1px, 1px);
+	transform: translate(-1px, 1px);
+}
